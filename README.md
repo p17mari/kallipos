@@ -14,6 +14,9 @@ which is a git submodule, ie a link to another repo.
 There is a bash script `make_latex.sh` which can be modified
 in order to prepare the desired output format.
 
+In order to prepare a PDF with the LaTeX toolchain,
+just add a `latex` folder with a template and master file.
+
 ## Source files preprocessing
 
 The source files in the `text` folder are formated with 
