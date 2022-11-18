@@ -1,6 +1,6 @@
 function Image(img)
-    if img.classes:find('studentcontributionch07',1) then
-      local f = io.open("extras/" .. img.src, 'r')
+    if img.classes:find('studentcontributionch',1) then
+      local f = io.open("contribution/" .. img.src, 'r')
       local doc = pandoc.read(f:read('*a'))
       f:close()
       local caption = pandoc.utils.stringify(doc.meta.caption) 
