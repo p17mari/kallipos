@@ -1,5 +1,5 @@
 function Image(img)
-    if img.classes:find('studentcontributionch',1) then
+    if img.classes:find('studentcontribution',1) then
       local f = io.open("contribution/" .. img.src, 'r')
       local doc = pandoc.read(f:read('*a'))
       f:close()
