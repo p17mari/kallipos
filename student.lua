@@ -5,7 +5,7 @@ function Image(img)
         f:close()
         local caption = pandoc.utils.stringify(doc.meta.caption) or "Caption has not been set"
         local author = pandoc.utils.stringify(doc.meta.author) or "Author has not been set"
-        local contribution = "> " .. caption .. " " .. author
+        local student = "> " .. caption .. " " .. author
         return pandoc.RawInline('markdown',student)
       end
 end
